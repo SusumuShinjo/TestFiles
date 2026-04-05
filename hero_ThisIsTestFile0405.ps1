@@ -1,7 +1,6 @@
-#メッセージボックスを表示
+# メッセージボックスを表示
 Add-Type -AssemblyName Microsoft.VisualBasic
-[Microsoft.VisualBasic.Interaction]::MsgBox("Hello, World!","This Machine is Hacked")
+[Microsoft.VisualBasic.Interaction]::MsgBox("This Machine is Hacked", 16, "Hello, World!")
 
-#検証用
-Write-output "Hacked at $(Get-Date)" > $env:TEMP\hacked_log.txt
-
+# 検証用
+Write-Output "Hacked at $(Get-Date)" > "$env:TEMP\hacked_log.txt"
